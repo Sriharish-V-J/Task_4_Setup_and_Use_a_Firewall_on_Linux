@@ -13,34 +13,39 @@ To configure and test basic firewall rules that allow or block traffic, understa
 
 ---
 
-## 🐧 Linux (UFW)
+## 🐧 Steps To Be Followed on Linux: 
 
-### 1️⃣ Check and Enable UFW
+### 1️⃣ Enable UFW
 
 ```bash
-sudo ufw status verbose
 sudo ufw enable
 ```
 
-### 2️⃣  Block Inbound Telnet (Port 23)
+### 2️⃣ Check and Enable UFW
+
+```bash
+sudo ufw status verbose
+```
+
+### 3️⃣ Block Inbound Telnet (Port 23)
 
 ```bash
 sudo ufw deny 23
 ```
 
-### 3️⃣ Allow SSH (Port 22)
+### 4️⃣ Allow SSH (Port 22)
 
 ```bash
 sudo ufw allow 22
 ```
 
-### 4️⃣ View Rules
+### 5️⃣ View Rules
 
 ```bash
 sudo ufw status numbered
 ```
 
-### 5️⃣ Remove Rule
+### 6️⃣ Remove Rule
 
 ```bash
 sudo ufw delete deny 23
