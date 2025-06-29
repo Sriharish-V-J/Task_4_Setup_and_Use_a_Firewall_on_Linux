@@ -51,3 +51,9 @@ sudo ufw status numbered
 sudo ufw delete deny 23
 ```
 
+---
+
+## ✅ Conclusion
+Learning to use UFW to block and allow specific ports helps in controlling the traffic to a system. It effectively improves system security using firewalls.
+
+---
